@@ -32,3 +32,8 @@ You should see this:
 - Click on the MDI icon on HA panel to open the index
 - Browse to find an appropriate icon for your sensor/device/room etc
 - Click the icon or mdi:name to copy the icon name (with mdi: prefix) ready to paste into config yaml etc
+
+## To Do
+
+- Fully list weather icons
+- Fully list battery icons
