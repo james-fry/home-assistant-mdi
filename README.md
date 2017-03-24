@@ -22,6 +22,6 @@ panel_iframe:
 
 ## Usage
 
-- Click on the MDI icon to open the index
-- Browse to find an appropriate icon
-- Click icon or name to copy the icon name (with mdi: prefix) ready to paste into config yaml etc
+- Click on the MDI icon on HA panel to open the index
+- Browse to find an appropriate icon for your sensor/device/room etc
+- Click the icon or mdi:name to copy the icon name (with mdi: prefix) ready to paste into config yaml etc
