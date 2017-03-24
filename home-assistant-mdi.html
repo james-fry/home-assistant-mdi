@@ -1,0 +1,441 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Material Design Icons for Home Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #222;
+        }
+
+        h1, h2, div, footer {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+        }
+
+        h1 {
+            padding: 20px 20px 16px 20px;
+            font-size: 26px;
+            line-height: 26px;
+            font-weight: normal;
+            color: #FFF;
+            background-color: #2196F3;
+        }
+
+        h1 svg {
+            vertical-align: middle;
+            width: 26px;
+            height: 26px;
+            margin: 0 6px 4px 0;
+        }
+
+        h1 svg path {
+            fill: #FFF;
+        }
+
+        h1 .version {
+            font-size: 14px;
+            background: #FFF;
+            padding: 4px 10px;
+            float: right;
+            border-radius: 2px;
+            margin: -3px 0 0 0;
+            color: #666;
+            font-weight: bold;
+        }
+
+        h1 .version::before {
+            content: 'v';
+        }
+
+        h2 {
+            font-size: 18px;
+            padding: 20px;
+        }
+
+        .icons {
+            padding: 0 20px 10px 20px;
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 2;
+            -webkit-column-gap: 20px;
+            -moz-column-gap: 20px;
+            column-gap: 20px;
+        }
+
+        .icons div {
+            line-height: 2em;
+        }
+
+        .icons div span {
+	    color: #0099ff;
+            font-size: 14px;
+            border: 1px solid #DDD;
+            padding-left: 6px; 
+	    padding-right: 6px;    
+            margin-left: 4px;
+            margin-right: 4px;
+            border-radius: 4px;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            line-height: 24px;
+        }
+	.icons div span2 {
+            font-size: 14px;
+	    font-style: italic;
+            margin-left: 6px;
+            margin-right: 6px;
+            text-overflow: ellipsis;
+            display: inline-block;
+            max-width: calc(100% - 90px);
+            overflow: hidden;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+
+   
+        .icons div i:hover {
+            color: #3c90be;
+        }
+
+        .icons div code:hover {
+            border-color: #3c90be;
+        }
+
+        .icons div code {
+            border: 1px solid #DDD;
+            padding-left: 6px; 
+	    padding-right: 6px;    
+            margin-left: 4px;
+            margin-right: 4px;
+            border-radius: 4px;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            line-height: 24px;
+            cursor: pointer;
+        }
+
+        .icons div i {
+            display: inline-block;
+            width: 32px;
+            height: 24px;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            line-height: 24px;
+        }
+
+        .icons .mdi:before {
+            font-size: 24px;
+        }
+
+        pre {
+            margin: 0 20px;
+            font-family: Consolas, monospace;
+            padding: 10px;
+            border: 1px solid #DDD;
+            background: #F1F1F1;
+        }
+
+        div.copied {
+            position: fixed;
+            top: 100px;
+            left: 50%;
+            width: 200px;
+            text-align: center;
+            color: #3c763d;
+            background-color: #dff0d8;
+            border: 1px solid #d6e9c6;
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin-left: -100px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            padding: 20px;
+            color: #666;
+            border-top: 1px solid #DDD;
+            background: #F1F1F1;
+        }
+
+        footer a {
+            color: #e91e63;
+            text-decoration: none;
+        }
+    </style>
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>
+        <svg>
+            <path d="M0,0H8V3H18V0H26V8H23V18H26V26H18V23H8V21H18V18H21V8H18V5H8V8H5V18H8V26H0V18H3V8H0V0M2,2V6H6V2H2M2,20V24H6V20H2M20,2V6H24V2H20M20,20V24H24V20H20Z"></path>
+        </svg>
+        Material Design Icons for Home Assistant
+        <span class="version">0.1_1.8.36</span>
+    </h1>
+
+    <h2>Icons <small>(click icon/name to copy Home Assistant mdi: name to clipboard)</small></h2>
+    <div class="icons" id="icons"></div>
+
+    <footer>Based on the MDI webfont preview downloaded from <a href="https://materialdesignicons.com/getting-started/">https://materialdesignicons.com/getting-started</a>.</footer>
+
+    <script type="text/javascript">
+        (function () {
+            var icons = [
+{"name":"login","category":"Sensor","description":"Door sensor"}, 
+{"name":"page-layout-sidebar-right","category":"Sensor","description":"Door sensor"}, 
+{"name":"exit-to-app","category":"Sensor","description":"Door/window sensor"}, 
+{"name":"window-closed","category":"Sensor","description":"Window"}, 
+{"name":"window-open","category":"Sensor","description":"Window"}, 
+{"name":"disk","category":"Sensor","description":"Xiaomi circular push switch"}, 
+{"name":"bluetooth","category":"Sensor","description":"Bluetooth"}, 
+{"name":"gauge","category":"Sensor","description":"Generic gauge symbol"}, 
+{"name":"nest-thermostat","category":"Sensor","description":"Nest thermostat"}, 
+{"name":"temperature-celsius","category":"Sensor","description":"Temperature (in c) there is kelvin too if you are a science geek ?"}, 
+{"name":"temperature-fahrenheit","category":"Sensor","description":"Temperature (in f)"}, 
+{"name":"theme-light-dark","category":"Sensor","description":"Sun rise/set sensor"}, 
+{"name":"thermometer","category":"Sensor","description":"Temp sensor (also thermometer-lines)"}, 
+{"name":"nest-protect","category":"Sensor","description":"Nest atmospheric sensor"}, 
+{"name":"weather-windy","category":"Sensor","description":"Gas/smoke detector"}, 
+{"name":"smoking","category":"Sensor","description":"Smoke detector?"}, 
+{"name":"calendar","category":"Sensor","description":"Calendar e.g. google calendar"}, 
+{"name":"cube-send","category":"Sensor","description":"Parcel delivery sensor"}, 
+{"name":"dns","category":"Sensor","description":"DNS sensor"}, 
+{"name":"download","category":"Sensor","description":"Download (speed) sensor"}, 
+{"name":"eye","category":"Sensor","description":"Seems to be the generic \"observation\" icon for sensors"}, 
+{"name":"water-percent","category":"Sensor","description":"Humidity sensor"}, 
+{"name":"flower","category":"Sensor","description":"Xiaomi flora plant sensor or similar"}, 
+{"name":"image-filter-vintage","category":"Sensor","description":"Xiaomi flora plant sensor or similar"}, 
+{"name":"leaf","category":"Sensor","description":"Xiaomi flora plant sensor or similar"}, 
+{"name":"highway","category":"Sensor","description":"Traffic/commute sensor"}, 
+{"name":"subway","category":"Sensor","description":"Traffic/commute sensor"}, 
+{"name":"subway-variant","category":"Sensor","description":"Traffic/commute sensor"}, 
+{"name":"train","category":"Sensor","description":"Traffic/commute sensor"}, 
+{"name":"tram","category":"Sensor","description":"Traffic/commute sensor"}, 
+{"name":"mailbox","category":"Sensor","description":"You have (physical) mail sensor"}, 
+{"name":"camcorder","category":"Sensor","description":"Camera/video camera"}, 
+{"name":"camera","category":"Sensor","description":"Camera"}, 
+{"name":"video","category":"Sensor","description":"Camera/video camera"}, 
+{"name":"webcam","category":"Sensor","description":"Rebcam/camera"}, 
+{"name":"oil-temperature","category":"Sensor","description":"Liquid temperature, pool temp etc"}, 
+{"name":"pool","category":"Sensor","description":"Pool maintenance/sensor"}, 
+{"name":"snowflake","category":"Sensor","description":"Ice warning"}, 
+{"name":"taxi","category":"Sensor","description":"Taxi service/uber sebsor"}, 
+{"name":"uber","category":"Sensor","description":"Uber component"}, 
+{"name":"blur-radial","category":"Device","description":"Xiaomi gateway"}, 
+{"name":"desktop-tower","category":"Device","description":"PC/server"}, 
+{"name":"server","category":"Device","description":"Server"}, 
+{"name":"harddisk","category":"Device","description":"Disk (e.g. for disk usage sensor)"}, 
+{"name":"lock","category":"Device","description":"Lock, also Lock-open: unlocked lock )"}, 
+{"name":"power-socket","category":"Device","description":"AC smart socket"}, 
+{"name":"power-plug","category":"Device","description":"AC smart plug/socket"}, 
+{"name":"radiator","category":"Device","description":"Radiator"}, 
+{"name":"coffee","category":"Device","description":"Coffee machine"}, 
+{"name":"blinds","category":"Device","description":"Blinds"}, 
+{"name":"roomba","category":"Device","description":"Roomba vacuum cleaner"}, 
+{"name":"router-wireless","category":"Device","description":"Router with wifi"}, 
+{"name":"switch","category":"Device","description":"Managed network switch"}, 
+{"name":"printer","category":"Device","description":"Printer"}, 
+{"name":"car-battery","category":"Device","description":"UPS"}, 
+{"name":"lan","category":"Device","description":"Generic \"network\" icon"}, 
+{"name":"network","category":"Device","description":"Alternative network icon"}, 
+{"name":"raspberrypi","category":"Device","description":"A raspberry pi. Who hasnt got one?"}, 
+{"name":"scale-bathroom","category":"Device","description":"Weighing scales/smart scale"}, 
+{"name":"ethernet","category":"Device","description":"Ethernet (LAN speed, LAN throughput etc)"}, 
+{"name":"fish","category":"Device","description":"Aquarium (lights etc)"}, 
+{"name":"flash","category":"Device","description":"Generic switch icon"}, 
+{"name":"fridge","category":"Device","description":"Refrigerator (also fridge-filled, fridge-filled-bottom, fridge-filled-top)"}, 
+{"name":"washing-machine","category":"Device","description":"Smart laundry (?)"}, 
+{"name":"gate","category":"Device","description":"Automatic gate sensor/switch"}, 
+{"name":"fan","category":"Device","description":"Fan"}, 
+{"name":"air-conditioner","category":"Device","description":"A/C"}, 
+{"name":"kettle","category":"Device","description":"Kettle (does anyone really need a smart kettle?)"}, 
+{"name":"nfc","category":"Device","description":"Nfc tag (also nfc-variant)"}, 
+{"name":"scale","category":"Device","description":"Smart scale"}, 
+{"name":"stove","category":"Device","description":"Stove/oven control"}, 
+{"name":"apple","category":"Device","description":"Apple device"}, 
+{"name":"android","category":"Device","description":"Android device"}, 
+{"name":"tablet","category":"Device","description":""}, 
+{"name":"tablet-android","category":"Device","description":""}, 
+{"name":"tablet-ipad","category":"Device","description":""}, 
+{"name":"laptop","category":"Device","description":""}, 
+{"name":"laptop-mac (etc)","category":"Device","description":""}, 
+{"name":"cellphone","category":"Device","description":""}, 
+{"name":"cellphone-android","category":"Device","description":""}, 
+{"name":"cellphone-iphone","category":"Device","description":""}, 
+{"name":"desktop-mac","category":"Device","description":""}, 
+{"name":"lightbulb","category":"Lighting","description":"Bulb on/off/outline"}, 
+{"name":"lightbulb-outline","category":"Lighting","description":"Bulb on/off/outline"}, 
+{"name":"lightbulb-on","category":"Lighting","description":"Bulb on/off/outline"}, 
+{"name":"lightbulb-on-outline","category":"Lighting","description":"Bulb on/off/outline"}, 
+{"name":"lamp","category":"Lighting","description":"Table lamp"}, 
+{"name":"ceiling-light","category":"Lighting","description":"Ceiling pendant lamp"}, 
+{"name":"spotlight","category":"Lighting","description":"Spotlight"}, 
+{"name":"white-balance-incandescent","category":"Lighting","description":"Alternative bulb"}, 
+{"name":"white-balance-iridescent","category":"Lighting","description":"Strip light"}, 
+{"name":"ev-station","category":"Vehicles","description":"Charge for EV (if you are lucky enough to own one ?)"}, 
+{"name":"car-connected","category":"Vehicles","description":"Connected car"}, 
+{"name":"account","category":"Presence","description":"Person"}, 
+{"name":"account-multiple","category":"Presence","description":"Family/group"}, 
+{"name":"face","category":"Presence","description":"Alternative for person"}, 
+{"name":"battery","category":"Battery","description":"Lots of variants for battery charge levels"}, 
+{"name":"cast","category":"Media/Player","description":"Chromecast media_player"}, 
+{"name":"plex","category":"Media/Player","description":"Plex iframe and plex media_player"}, 
+{"name":"kodi","category":"Media/Player","description":"Kodi media_player"}, 
+{"name":"vlc","category":"Media/Player","description":"VLC"}, 
+{"name":"radio","category":"Media/Player","description":"Radio"}, 
+{"name":"speaker","category":"Media/Player","description":"Speaker (e.g. Sonos)"}, 
+{"name":"speaker-wireless","category":"Media/Player","description":"Speaker (e.g. Sonos)"}, 
+{"name":"television","category":"Media/Player","description":"Television"}, 
+{"name":"monitor","category":"Media/Player","description":"Alternative for TV or for (smart) monitor"}, 
+{"name":"projector","category":"Media/Player","description":"Projector"}, 
+{"name":"projector-screen","category":"Media/Player","description":"Projector screen control"}, 
+{"name":"boombox","category":"Media/Player","description":"Boombox"}, 
+{"name":"calculator","category":"Media/Player","description":"TV remote with screen (harmony)"}, 
+{"name":"remote","category":"Media/Player","description":"TV remote"}, 
+{"name":"emby","category":"Media/Player","description":"Emby media server"}, 
+{"name":"filmstrip","category":"Media/Player","description":"Movies"}, 
+{"name":"movie","category":"Media/Player","description":"Movies"}, 
+{"name":"google-play","category":"Media/Player","description":"Google play service"}, 
+{"name":"amazon","category":"Media/Player","description":"Amazon prime video service"}, 
+{"name":"netflix","category":"Media/Player","description":"Netflix service"}, 
+{"name":"spotify","category":"Media/Player","description":"Spotify service"}, 
+{"name":"youtube-play","category":"Media/Player","description":"Youtube service"}, 
+{"name":"music","category":"Media/Player","description":"Music"}, 
+{"name":"power","category":"Media/Player","description":"International power symbol (e.g. for \"all off\" type switch)"}, 
+{"name":"play","category":"Media/Player","description":"Play control"}, 
+{"name":"pause","category":"Media/Player","description":"Pause control"}, 
+{"name":"play-pause","category":"Media/Player","description":"Play/pause toggle control"}, 
+{"name":"rewind","category":"Media/Player","description":"Rewind control"}, 
+{"name":"fast-forward","category":"Media/Player","description":"Fast forward control"}, 
+{"name":"skip-forward","category":"Media/Player","description":"Skip control"}, 
+{"name":"skip-backward","category":"Media/Player","description":"Skip control"}, 
+{"name":"skip-next","category":"Media/Player","description":"Frame advance control"}, 
+{"name":"skip-previous","category":"Media/Player","description":"Frame back control"}, 
+{"name":"step-forward","category":"Media/Player","description":"Frame advance control"}, 
+{"name":"step-backward","category":"Media/Player","description":"Frame back control"}, 
+{"name":"volume-low","category":"Media/Player","description":"Volume controls"}, 
+{"name":"volume-medium","category":"Media/Player","description":"Volume controls"}, 
+{"name":"volume-high","category":"Media/Player","description":"Volume controls"}, 
+{"name":"volume-mute","category":"Media/Player","description":"Volume controls"}, 
+{"name":"volume-minus","category":"Media/Player","description":"Volume controls"}, 
+{"name":"volume-plus","category":"Media/Player","description":"Volume controls"}, 
+{"name":"television-guide","category":"Media/Player","description":"EPG control"}, 
+{"name":"xbox","category":"Media/Player","description":"Xbox console"}, 
+{"name":"playstation","category":"Media/Player","description":"Playstation console"}, 
+{"name":"wii","category":"Media/Player","description":"Nintendo wii/wii-u"}, 
+{"name":"theater","category":"Media/Player","description":"Good for theater scene (lights, blinds, entertainment system etc)"}, 
+{"name":"security-home","category":"Miscellaneous","description":"General home security/protection"}, 
+{"name":"shield","category":"Miscellaneous","description":"Protected"}, 
+{"name":"shield-outline","category":"Miscellaneous","description":"Unprotected"}, 
+{"name":"verified","category":"Miscellaneous","description":"Protected"}, 
+{"name":"bell","category":"Miscellaneous","description":"Bell/time alarm"}, 
+{"name":"bell-ring","category":"Miscellaneous","description":"Bell/time alarm"}, 
+{"name":"creation","category":"Miscellaneous","description":"Magic! (automation)"}, 
+{"name":"eyedropper","category":"Miscellaneous","description":"Select colour (for RGBW lamp/bulb)"}, 
+{"name":"signal-variant","category":"Miscellaneous","description":"Radio signal"}, 
+{"name":"telegram","category":"Miscellaneous","description":"Telegram notifications"}, 
+{"name":"gas-cylinder","category":"Miscellaneous","description":"Gas storage (if sensor for this exists)"}, 
+{"name":"briefcase-check","category":"Miscellaneous","description":"Holiday mode"}, 
+{"name":"map-marker-radius","category":"Miscellaneous","description":"Map/tracker/zone"}, 
+{"name":"message","category":"Miscellaneous","description":"Notification"}, 
+{"name":"message-alert","category":"Miscellaneous","description":"Alert notification"},
+{"name":"cat","category":"Miscellaneous","description":"Pet/cat"},
+{"name":"paw","category":"Miscellaneous","description":"Pet"},
+{"name":"reproduction","category":"Miscellaneous","description":"\"Sexy time\" switch? :)"},
+{"name":"settings","category":"Miscellaneous","description":"Settings cog"},
+{"name":"speedometer","category":"Miscellaneous","description":"Speed gauge"},
+{"name":"timer","category":"Miscellaneous","description":"Timer control e.g. how long to leave lights on after no presence detected"},
+{"name":"tune","category":"Miscellaneous","description":"Generic slider/tune control"},
+{"name":"usb","category":"Miscellaneous","description":"USB"},
+{"name":"voice","category":"Miscellaneous","description":"Voice announce/TTS"},
+{"name":"weather-?","category":"Miscellaneous","description":"Weather conditions and sun rise/set (all variants) "},
+{"name":"church","category":"Building/Zone","description":"Church"},
+{"name":"castle","category":"Building/Zone","description":"Castle (you live in a castle?)"},
+{"name":"factory","category":"Building/Zone","description":"Factory"},
+{"name":"home","category":"Building/Zone","description":"Home"},
+{"name":"home-variant","category":"Building/Zone","description":"Home"},
+{"name":"domain","category":"Building/Zone","description":"Office building"},
+{"name":"store","category":"Building/Zone","description":"Shop/store"},
+{"name":"garage","category":"Building/Zone","description":"Garage (door closed)"},
+{"name":"garage","category":"Building/Zone","description":"Garage (door open)"},
+{"name":"truck-trailer","category":"Building/Zone","description":"Trailer/caravan/mobile home"},
+{"name":"page-layout-footer","category":"Room/Floor","description":"Ground floor of building"},
+{"name":"format-vertical-align-bottom","category":"Room/Floor","description":"Ground floor of building"},
+{"name":"page-layout-body ","category":"Room/Floor","description":"Middle floor of building"},
+{"name":"format-vertical-align-center","category":"Room/Floor","description":"Middle floor of building"},
+{"name":"page-layout-header","category":"Room/Floor","description":"Top floor of building"},
+{"name":"format-vertical-align-top","category":"Room/Floor","description":"Top floor of building"},
+{"name":"sofa","category":"Room/Floor","description":"Lounge/living room"},
+{"name":"hanger","category":"Room/Floor","description":"Wardrobe"},
+{"name":"hotel","category":"Room/Floor","description":"Bed(room)"},
+{"name":"kettle","category":"Room/Floor","description":"Kitchen"},
+{"name":"food","category":"Room/Floor","description":"Kitchen"},
+{"name":"food-variant","category":"Room/Floor","description":"Kitchen"},
+{"name":"food-fork-drink","category":"Room/Floor","description":"Kitchen"},
+{"name":"silverware-variant","category":"Room/Floor","description":"Kitchen"},
+{"name":"water-pump","category":"Room/Floor","description":"Bathroom/washroom"},
+{"name":"bowl","category":"Room/Floor","description":"Kitchen"}
+];
+            var copyText = function (text) {
+                var copyFrom = document.createElement('textarea');
+                copyFrom.setAttribute("style", "position:absolute;opacity:0");
+                copyFrom.value = text;
+                document.body.appendChild(copyFrom);
+                copyFrom.select();
+                document.execCommand('copy');
+                var copied = document.createElement('div');
+                copied.setAttribute('class', 'copied');
+                copied.appendChild(document.createTextNode('Copied to Clipboard'));
+                document.body.appendChild(copied);
+                setTimeout(function () {
+                    document.body.removeChild(copyFrom);
+                    document.body.removeChild(copied);
+                }, 1500);
+            };
+            for (var j = 0; j < icons.length; j++) {
+                var div = document.createElement('div'),
+                    i = document.createElement('i');
+                i.className = 'mdi mdi-' + icons[j].name;
+                div.appendChild(i);
+                var code = document.createElement('code');
+                code.appendChild(document.createTextNode('mdi:' + icons[j].name));
+                div.appendChild(code);
+		var span = document.createElement('span');
+                span.appendChild(document.createTextNode(icons[j].category));
+                div.appendChild(span);
+        	var span2 = document.createElement('span2');
+                span2.appendChild(document.createTextNode(icons[j].description));
+                div.appendChild(span2);
+                span.onclick = (function (icon) {
+                    return function () {
+                        document.getElementById('name').innerHTML = icon.name;
+                    };
+                })(icons[j]);
+                i.onmouseup = (function (icon) {
+                    return function () {
+                        copyText('mdi:' + icon.name);
+                    };
+                })(icons[j]);
+                code.onmouseup = (function (icon) {
+                    return function () {
+                        copyText('mdi:' + icon.name);
+                    };
+                })(icons[j]);
+                document.getElementById('icons').appendChild(div);
+            }
+        })();
+    </script>
+
+</body>
+</html>
