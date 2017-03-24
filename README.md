@@ -25,7 +25,7 @@ panel_iframe:
 
 You should see this:
 
-![Missing image showing Home Assistant with the MDI Icon Index](https://github.com/james-fry/home-assistant-mdi/image/ha_mdi.jpg "Home Assistant with the MDI Icon Index")
+![Missing image showing Home Assistant with the MDI Icon Index](https://github.com/james-fry/home-assistant-mdi/images/ha_mdi.jpg "Home Assistant with the MDI Icon Index")
 
 ## Usage
 
