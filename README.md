@@ -37,3 +37,4 @@ You should see this:
 
 - Fully list weather icons
 - Fully list battery icons
+- Fix non-printing icos (if possible)
