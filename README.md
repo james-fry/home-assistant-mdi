@@ -11,6 +11,18 @@ I have kept all the files from the original webfont and added the following:
 The following was tested with HA running in Docker on Ubuntu.
 I am currently running with no SSL/TLS, so not tested with HTTPS.
 
+Easy Method - use rawgit CDN: (thanks to @danielperna84 on Home Assistant forums https://community.home-assistant.io/t/simplistic-configuration-ui/10175/125?u=hijinx)
+- Edit your HA configuration.yaml file to add an iframe using rawgit direct URL to my repo:
+```yaml
+panel_iframe:
+  mdiindex:
+    title: MDI Icon Index
+    icon: mdi:vector-square
+    url: https://cdn.rawgit.com/james-fry/home-assistant-mdi/efd95d7a/home-assistant-mdi.html
+```
+- Restart Home Assistant to pick up the new panel_iframe, which will add a MDI icon on the panel
+
+Harder Method - clone my GH repo locally
 - cd to HL local www folder - typically this is located (or needs to be created) in the same directory as your HA config files
 - Clone the repo into the HA local www folder: *git clone https://github.com/james-fry/home-assistant-mdi*
 - Edit your HA configuration.yaml file to add an iframe pointing to local file home-assistant-mdi html:
