@@ -18,7 +18,7 @@ panel_iframe:
   mdiindex:
     title: MDI Icon Index
     icon: mdi:vector-square
-    url: https://cdn.rawgit.com/james-fry/home-assistant-mdi/efd95d7a/home-assistant-mdi.html
+    url: https://rawgit.com/james-fry/home-assistant-mdi/master/home-assistant-mdi.html
 ```
 - Restart Home Assistant to pick up the new panel_iframe, which will add a MDI icon on the panel
 
